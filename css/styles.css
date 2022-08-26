@@ -1,0 +1,18 @@
+@import "./reset.css";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem;
+}
+
+.header .title {
+  font-size: 2rem;
+}
+
+.header .subtitle {
+  font-size: 1.25rem;
+}
