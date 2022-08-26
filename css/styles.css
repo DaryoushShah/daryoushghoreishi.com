@@ -16,3 +16,15 @@
 .header .subtitle {
   font-size: 1.25rem;
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem;
+}
+
+.footer a {
+  margin: 0 1rem;
+}
