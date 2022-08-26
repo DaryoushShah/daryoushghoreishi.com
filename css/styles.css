@@ -28,3 +28,15 @@
 .footer a {
   margin: 0 1rem;
 }
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.section p {
+  padding: 0.25rem;
+}
