@@ -1,5 +1,11 @@
 @import "./reset.css";
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -33,6 +39,8 @@
   align-items: center;
 
   background-color: #000;
+
+  margin-top: auto;
 
   padding: 2rem;
 }
