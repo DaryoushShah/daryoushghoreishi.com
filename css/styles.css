@@ -2,19 +2,29 @@
 
 .header {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 
+  background-color: #000;
+
   padding: 2rem;
 }
-
+.header .logo-title {
+  margin: 2rem;
+}
 .header .title {
-  font-size: 2rem;
+  margin: 0.25rem;
+  color: #FFF;
 }
 
 .header .subtitle {
-  font-size: 1.25rem;
+  margin: 0.25rem;
+  color: #FFF;
+}
+
+.header .logo {
+  width: 350px;
+  height: auto;
 }
 
 .footer {
@@ -22,21 +32,65 @@
   justify-content: center;
   align-items: center;
 
+  background-color: #000;
+
   padding: 2rem;
 }
 
 .footer a {
   margin: 0 1rem;
+  color: #FFF;
 }
 
 .section {
   display: flex;
   flex-direction: column;
+
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+.section .title {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.section.center {
   justify-content: center;
   align-items: center;
-  padding: 2rem;
 }
 
 .section p {
-  padding: 0.25rem;
+  padding: 0.5rem;
+}
+
+.bg-secondary {
+  background-color: #434445;
+  color: #FFF;
+}
+
+.button {
+  width: 10rem;
+  height: 2rem;
+
+  border-radius: 25px;
+}
+
+@media only screen and (min-width: 600px){
+  .header .title{
+    font-size: 3.5rem;
+  }
+  .header .subtitle {
+    font-size: 2.5rem;
+  }
+  .footer a {
+    font-size: 1.5rem;
+  }
+  .section p {
+    font-size: 1.4rem;
+  }
+  .section .title {
+    font-size: 2rem;
+  }
+  
 }
