@@ -152,7 +152,6 @@ span {
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
-    margin: 2rem;
     background: var(--main-color);
     border-radius: 4rem;
     box-shadow: 0 0 1rem var(--main-color);
@@ -535,4 +534,12 @@ span {
   .about-img img {
     width: 90vw;
   }
+}
+
+.margin-top-2 {
+    margin-top: 2rem;
+}
+
+.margin-right-2 {
+    margin-right: 2rem;
 }
