@@ -1,8 +1,8 @@
 @import url('./reset.css');
 
 @font-face {
+  src: url('../fonts/rounded-elegance.ttf');
   font-family: 'rounded-elegance';
-  src: url('./reset.css');
 }
 
 * {
@@ -47,7 +47,7 @@ section {
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    background: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,8 +59,7 @@ section {
 }
 
 .logo {
-    max-height: auto;
-    width: 200px;
+    width: 20rem;
 }
 
 .navbar a {
@@ -153,6 +152,7 @@ span {
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
+    margin: 2rem;
     background: var(--main-color);
     border-radius: 4rem;
     box-shadow: 0 0 1rem var(--main-color);
@@ -369,17 +369,23 @@ span {
     cursor: pointer;
 }
 
+.centered-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+    background: black;
 }
 
 .footer-text p {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .footer-iconTop a {
@@ -430,88 +436,103 @@ span {
 }
 
 @media (max-width: 768px) {
-    #menu-icon {
-        display: block;
-    }
+  .logo {
+    width: 10rem;
+  }
 
-    .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 3%;
-        background: var(--bg-color);
-        border-top: .1rem solid rgba(0, 0, 0, .2);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-        display: none;
-    }
+  #menu-icon {
+    display: block;
+  }
 
-    .navbar.active {
-        display: block;
-    }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--bg-color);
+    border-top: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    display: none;
+  }
 
-    .navbar a {
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
+  .navbar.active {
+    display: block;
+  }
 
-    .home {
-        flex-direction: column;
-    }
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
 
-    .home-content h3 {
-        font-size: 2.6rem;
-    }
+  .home {
+    flex-direction: column;
+  }
 
-    .home-content h1 {
-        font-size: 5rem;
-    }
+  .home-content h3 {
+    font-size: 2.6rem;
+  }
 
-    .home-img img {
-        width: 70vw;
-        margin-top: 4rem;
-    }
+  .home-content h1 {
+    font-size: 5rem;
+  }
 
-    .about {
-        flex-direction: column-reverse;
-    }
+  .home-img img {
+    width: 70vw;
+    margin-top: 4rem;
+  }
 
-    .about img {
-        width: 70vw;
-        margin-top: 4rem;
-    }
+  .about {
+    flex-direction: column-reverse;
+  }
+
+  .about img {
+    width: 70vw;
+    margin-top: 4rem;
+  }
 }
 
 @media (max-width: 580px) {
-    .portfolio-container {
-        grid-template-columns: 1fr;
-    }
+  .logo {
+    width: 8rem;
+  }
+
+  .portfolio-container {
+      grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 450px) {
-    html {
-        font-size: 50%;
-    }
+  .logo {
+    width: 8rem;
+  }
 
-    .contact form .input-box input {
-        width: 100%;
-    }
+  html {
+    font-size: 50%;
+  }
 
-    .footer {
-        flex-direction: column-reverse;
-    }
+  .contact form .input-box input {
+    width: 100%;
+  }
 
-    .footer p {
-        text-align: center;
-        margin-top: 2rem;
-    }
+  .footer {
+    flex-direction: column-reverse;
+  }
+
+  .footer p {
+    text-align: center;
+    margin-top: 2rem;
+  }
 }
 
 @media (max-width: 365px) {
+  .logo {
+    width: 5rem;
+  }
 
-    .home-img img,
-    .about-img img {
-        width: 90vw;
-    }
+  .home-img img,
+  .about-img img {
+    width: 90vw;
+  }
 }
